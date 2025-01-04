@@ -1,9 +1,8 @@
 package com.example.demo.model;
 
-import java.util.ArrayList;
 import java.util.List;
 
-public class DPStrategy implements RouteStrategy{
+public class DPStrategy implements RouteBuilderStrategy {
 
     private boolean[][] findCheapestRoute(int maxWeight, List<Transfer> availableTransfers) {
         int numberOfTransfers = availableTransfers.size();

@@ -2,6 +2,6 @@ package com.example.demo.model;
 
 import java.util.List;
 
-public interface RouteStrategy {
+public interface RouteBuilderStrategy {
     public Route buildRoute(int maxWeight, List<Transfer> availableTransfers);
 }
