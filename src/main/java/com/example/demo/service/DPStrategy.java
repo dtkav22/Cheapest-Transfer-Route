@@ -1,7 +1,12 @@
-package com.example.demo.model;
+package com.example.demo.service;
+
+import com.example.demo.model.Route;
+import com.example.demo.model.Transfer;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class DPStrategy implements RouteBuilderStrategy {
 
     private boolean[][] findCheapestRoute(int maxWeight, List<Transfer> availableTransfers) {

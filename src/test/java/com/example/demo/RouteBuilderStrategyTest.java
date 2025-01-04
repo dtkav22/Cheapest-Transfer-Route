@@ -1,8 +1,8 @@
 package com.example.demo;
 
-import com.example.demo.model.DPStrategy;
-import com.example.demo.model.RecursionStrategy;
-import com.example.demo.model.RouteBuilderStrategy;
+import com.example.demo.service.DPStrategy;
+import com.example.demo.service.RecursionStrategy;
+import com.example.demo.service.RouteBuilderStrategy;
 import com.example.demo.model.Transfer;
 import junit.framework.TestCase;
 
@@ -66,5 +66,6 @@ public class RouteBuilderStrategyTest extends TestCase {
         }
         int maxWeight = rand.nextInt(200000);
         assert dpRouteBuilder.buildRoute(maxWeight, transfers).getCost() == recursionRouteBuilder.buildRoute(maxWeight, transfers).getCost();
+        assert dpRouteBuilder.buildRoute(maxWeight, transfers).getWeight() == recursionRouteBuilder.buildRoute(maxWeight, transfers).getWeight();
     }
 }

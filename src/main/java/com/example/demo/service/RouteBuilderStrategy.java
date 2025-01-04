@@ -1,4 +1,7 @@
-package com.example.demo.model;
+package com.example.demo.service;
+
+import com.example.demo.model.Route;
+import com.example.demo.model.Transfer;
 
 import java.util.List;
 
